@@ -1,0 +1,344 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+/* Header styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Header title and subtitle */
+.header-container h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-container h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 5px;
+    color: #dcdcdc;
+}
+
+/* Navigation Bar Styling */
+nav {
+    width: 100%;
+    background-color: #34495e;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Evenly space items across */
+    flex-wrap: nowrap; /* Ensure items do not wrap to a new line */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent text from breaking into multiple lines */
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Center items in mobile view */
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .header-container h1 {
+        font-size: 2rem;
+    }
+
+    .header-container h2 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom right, #2980b9, #8e44ad);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Hero Image Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 3; /* Ensure the text is above the overlay */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for additional readability */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* CTA buttons in hero */
+.cta-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons a:hover {
+    background-color: #c0392b;
+}
+
+/* CTA buttons in hero */
+.cta-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons a:hover {
+    background-color: #c0392b;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #7f8c8d;
+}
+
+ul {
+    text-align: left;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #34495e;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+/* General button styling */
+.button {
+    background-color: #f39c12; /* Bright orange color */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+/* Button styling */
+.detailed-course-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.detailed-course-button button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.detailed-course-button button:hover {
+    background-color: #2980b9;
+}
+
+/* Course descriptions styling */
+#course-descriptions {
+    display: none;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.course-details h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.course-details p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+/* Additional styles for better user experience */
+.cta {
+    padding: 12px 24px;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #e67e22;
+}
+
